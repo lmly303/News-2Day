@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News 2Day</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./fevicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fevicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fevicon.png">
+
+    <link rel="stylesheet" href="./styles.css " />
+</head>
+<body>
+    <nav>
+        <div class="main-nav conatiner flex">
+            <a class="company-logo">
+                <img src="./NEWS 2DAY.gif" alt="Animated Logo" />
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+            <div class="nav-links">
+                <ul class="flex" class="dropdown-menu">
+                    <li class="hover-link nav-items" id="finance" onclick="onNavItemClick('finance')">finance</li>
+                    <li class="hover-link nav-items" id="politics" onclick="onNavItemClick('politics')">politics</li>
+                    <li class="hover-link nav-items" id="technology" onclick="onNavItemClick('technology')">technology</li>
+                    <li class="hover-link nav-items" id="world" onclick="onNavItemClick('world')">world</li>
+                    <li class="hover-link nav-items" id="business" onclick="onNavItemClick('business')">business</li>
+                    <li class="hover-link nav-items" id="sports" onclick="onNavItemClick('sports')">sports</li>
+                    <li class="hover-link nav-items" id="entertainment" onclick="onNavItemClick('entertainment')">entertainment</li>
+                    <li class="hover-link nav-items" id="health" onclick="onNavItemClick('health')">health</li>
+                    <li class="hover-link nav-items" id="science" onclick="onNavItemClick('science')">science</li>
+                    <li class="hover-link nav-items" id="education" onclick="onNavItemClick('education')">education</li>
+                    <li class="hover-link nav-items" id="lifestyle" onclick="onNavItemClick('lifestyle')">lifestyle</li>
+                    <li class="hover-link nav-items" id="environment" onclick="onNavItemClick('environment')">environment</li>
+                    <li class="hover-link nav-items" id="opinion" onclick="onNavItemClick('opinion')">opinion</li>
+                    <li class="hover-link nav-items" id="travel" onclick="onNavItemClick('travel')">travel</li>
+                    <li class="hover-link nav-items" id="automobile" onclick="onNavItemClick('automobile')">automobile</li>
+                    <li class="hover-link nav-items" id="real-estate" onclick="onNavItemClick('real-estate')">real estate</li>
+                    <li class="hover-link nav-items" id="culture" onclick="onNavItemClick('culture')">culture</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input id="search-text" type="text" class="news-input" placeholder="search">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="cards-container conatiner flex" id="cards-container">    
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="cards">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news image"  id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">heading</h3>
+                <h6 id="news-source">hello world</h6>
+                <p class="news-desc" id="news-desc">habibi welcome to news</p>
+            </div>
+        </div>
+    </template>
+
+
+    <script src="./script.js" ></script>
+</body>
+</html>

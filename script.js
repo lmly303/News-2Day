@@ -10,7 +10,7 @@ function reload() {
 async function fetchNews(query) {
     try {
         const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
-        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        // if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
         const data = await res.json();
         console.log(data);
         bindData(data.articles);

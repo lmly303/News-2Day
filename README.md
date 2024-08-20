@@ -15,4 +15,4 @@ To set up and run the project locally, follow these steps:
 
 ## Visit the App
 
-You can visit the deployed version of the Path Finder app [here](https://weather-app-git-main-shrey-karirias-projects.vercel.app/)
+You can visit the deployed version of the Path Finder app [here](https://news-2-day.vercel.app/)
